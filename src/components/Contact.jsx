@@ -24,9 +24,9 @@ const contacts = [
         desc: "All Day 07.00 - 20.00 WIB"
     },
 ]
-const Contact = () => {
+const Contact = ({ refrence }) => {
     return (
-        <section className='mx-auto lg:w-[1280px] items-center py-5 lg:mb-24 px-4 lg:px-0'>
+        <section className='mx-auto lg:w-[1280px] items-center py-5 lg:mb-24 px-4 lg:px-0' ref={refrence}>
             <SectionTitle label="Contact" subLabel="Temukan dan hubungi kami disini:" />
             <div className="grid md:grid-cols-2 gap-2 md:gap-4">
                 {contacts.map((contact, i) => (

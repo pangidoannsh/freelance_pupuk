@@ -9,7 +9,7 @@ const Footer = () => {
                         <h2 className="text-3xl font-monts font-bold mb-4 md:mb-12">Your Company Name</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti eveniet maiores tempore optio magnam quis ipsum aliquid debitis praesentium ipsa placeat culpa animi maxime sunt, aliquam unde nemo tenetur hic!</p>
                     </div>
-                    <div>
+                    <div className="lg:w-max md:w-full">
                         <div className="font-bold">Useful Links</div>
                         <div className="flex flex-col gap-2 mt-4">
                             {menus.map((menu) => (

@@ -3,6 +3,8 @@ import 'swiper/css';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { useCallback, useRef, useState } from 'react';
 
+const isMobile = window.innerWidth < 400
+
 const HargaMobile = ({ datas }) => {
     const swiper = useRef(null)
     const [slide, setSlide] = useState({ active: 0, total: 3 })
@@ -21,7 +23,7 @@ const HargaMobile = ({ datas }) => {
     }, []);
     return (
         <div className="relative px-2 w-full">
-            <Swiper slidesPerView={1} spaceBetween={30} ref={swiper} onSlideChange={({ realIndex }) => setSlide(prev => ({ ...prev, active: realIndex }))}>
+            <Swiper initialSlide={1} slidesPerView={isMobile ? 1 : 2} spaceBetween={30} ref={swiper} onSlideChange={({ realIndex }) => setSlide(prev => ({ ...prev, active: realIndex }))}>
                 {datas.map((harga, i) => (
                     <SwiperSlide key={i} className='p-2 h-full'>
                         <div className={`bg-white shadow-lg border-t-2 border-neutral-100 rounded-2xl py-14 px-10 h-full flex flex-col items-center gap-8 ${harga.best ? 'border-[3px] border-sky-500' : ''}`}>

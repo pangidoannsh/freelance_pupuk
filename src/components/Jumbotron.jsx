@@ -1,8 +1,7 @@
-import React from 'react'
 
-const Jumbotron = () => {
+const Jumbotron = ({ refrence }) => {
     return (
-        <section
+        <section ref={refrence}
             className="h-screen w-screen bg-cover bg-center bg-no-repeat relative flex items-center"
             style={{ backgroundImage: `url("/assets/images/jumbotron.jpg")` }}
         >

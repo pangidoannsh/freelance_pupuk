@@ -28,9 +28,9 @@ const pakets = [
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati itaque delectus"
     },
 ]
-const Paket = () => {
+const Paket = ({ refrence }) => {
     return (
-        <section className='mx-auto lg:w-[1280px] items-center py-5 px-4 lg:px-0'>
+        <section className='mx-auto lg:w-[1280px] items-center py-5 px-4 lg:px-0' ref={refrence}>
             <SectionTitle label="Paket" subLabel="Lorem ipsum dolor sit amet" />
             <div className="grid md:grid-cols-2 gap-6">
                 {pakets.map((paket, i) => (

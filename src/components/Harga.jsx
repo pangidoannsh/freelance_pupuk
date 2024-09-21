@@ -42,11 +42,11 @@ const hargas = [
     },
 ]
 
-const isMobile = window.innerWidth < 768
+const isMobile = window.innerWidth < 840
 
-const Harga = () => {
+const Harga = ({ refrence }) => {
     return (
-        <section className='mx-auto lg:w-[1280px] items-center py-5 md:mb-32'>
+        <section className='mx-auto xl:w-[1280px] items-center py-5 lg:mb-32' ref={refrence}>
             <SectionTitle label="Lorem" subLabel="Lorem ipsum dolor sit amet" />
             {
                 isMobile ? <HargaMobile datas={hargas} /> : (

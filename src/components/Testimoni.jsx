@@ -1,7 +1,7 @@
 
-const Testimoni = () => {
+const Testimoni = ({ refrence }) => {
     return (
-        <section className='bg-neutral-100 py-20'>
+        <section className='bg-neutral-100 py-20' ref={refrence}>
             <div className="mx-auto lg:w-[1280px] px-4 lg:px-0">
                 <div className="lg:w-[40%] mr-auto ">
                     <h2 className="text-3xl font-semibold text-start">Testimoni</h2>

@@ -1,10 +1,10 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
-const About = () => {
+const About = ({ refrence }) => {
     return (
-        <section className='bg-neutral-100 py-20'>
-            <div className="mx-auto lg:w-[1280px] px-4 lg:px-0 lg:grid lg:grid-cols-5 gap-6 items-center">
+        <section className='bg-neutral-100 py-20' ref={refrence}>
+            <div className="mx-auto lg:w-[1280px] xl:w-[1280px] px-4 lg:px-0 lg:grid lg:grid-cols-5 gap-6 items-center">
                 <div className='flex flex-col gap-4 lg:col-span-2'>
                     <h3 className='bg-sky-100 text-sky-500 rounded py-3 px-4 w-max'>About Us</h3>
                     <h4 className='font-bold text-3xl'>Lorem Ipsum Dolor</h4>
@@ -13,7 +13,7 @@ const About = () => {
                         Pilih Paket <Icon icon="bi:arrow-right" className='text-white text-xl relative left-0 duration-300 group-hover:left-2' />
                     </button>
                 </div>
-                <div className='flex lg:flex-row flex-col mt-6 lg:mt-0 items-end gap-4 lg:col-span-3'>
+                <div className='flex md:flex-row flex-col mt-6 lg:mt-0 items-end gap-4 lg:col-span-3'>
                     <div className='bg-cover bg-center bg-no-repeat relative px-10 py-12 rounded-xl w-full group overflow-hidden' style={{ backgroundImage: `url("/assets/images/item1.png")` }}>
                         <div className='absolute inset-0 bg-black/30' />
                         <div className="relative z-10">
