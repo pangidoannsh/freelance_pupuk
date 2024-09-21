@@ -2,7 +2,7 @@ import { menus } from "../data"
 
 const Footer = () => {
     return (
-        <section className="bg-neutral-50 py-10">
+        <section className="bg-neutral-200 py-12">
             <div className="mx-auto lg:w-[1280px] px-4 lg:px-0">
                 <div className="flex md:flex-row flex-col gap-12 md:gap-6">
                     <div className="lg:w-[40%]">
@@ -18,7 +18,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-neutral-200 text-center mt-6 py-10 px-4">
+                <div className="text-center mt-6 py-10 px-4">
                     <div className="text-sm">© Copyright <span className="font-bold">Your Company Name</span> Rights Reserved</div>
                 </div>
             </div>

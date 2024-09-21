@@ -53,7 +53,7 @@ const Harga = ({ refrence }) => {
                     <div className="flex gap-6 mt-32">
                         {hargas.map((harga, i) => (
                             <div key={i} className="w-full px-2">
-                                <div className={`bg-white shadow-lg rounded-2xl py-14 px-10 lg:min-h-[60vh] flex flex-col items-center gap-8 ${harga.best ? 'scale-125 border-[3px] border-sky-500' : ''}`}>
+                                <div className={`bg-white shadow-lg rounded-2xl py-14 px-10 lg:min-h-[680px] flex flex-col items-center gap-8 ${harga.best ? 'scale-125 border-[3px] border-sky-500' : ''}`}>
                                     <div className="flex flex-col items-center">
                                         <div className="text-xl font-medium text-center my-6">{harga.title}</div>
                                         <div className="relative z-10 flex w-[70px] h-[70px] bg-sky-500 rounded-full items-center justify-center highlight">
@@ -73,8 +73,10 @@ const Harga = ({ refrence }) => {
                                             </div>
                                         ))}
                                     </div>
-                                    <button className="w-max py-1.5 px-10 rounded-full border-2 border-neutral-300 text-neutral-500 
-                            hover:bg-sky-500 hover:text-white font-medium hover:border-sky-500 duration-300">Order</button>
+                                    <button className="mt-auto w-max py-1.5 px-10 rounded-full border-2 border-neutral-300 text-neutral-500 
+                                    hover:bg-sky-500 hover:text-white font-medium hover:border-sky-500 duration-300">
+                                        Order
+                                    </button>
                                 </div>
                             </div>
                         ))}
