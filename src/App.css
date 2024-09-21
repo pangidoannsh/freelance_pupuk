@@ -25,3 +25,27 @@
   transform: translateZ(-2px);
   z-index: -1;
 }
+
+button.prev-btn {
+  position: absolute;
+  top: 50%;
+  /* translate: 0 -50%; */
+  z-index: 40;
+  left: 12px;
+  border-radius: 9999px;
+  background-color: #D9D9D9;
+  opacity: 50%;
+  padding: 2px;
+}
+
+button.next-btn {
+  position: absolute;
+  top: 50%;
+  /* translate: 0 -50%; */
+  z-index: 40;
+  right: 12px;
+  border-radius: 9999px;
+  opacity: 50%;
+  background-color: #D9D9D9;
+  padding: 2px;
+}

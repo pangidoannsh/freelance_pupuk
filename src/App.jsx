@@ -7,6 +7,7 @@ import Paket from './components/Paket'
 import Harga from './components/Harga'
 import Testimoni from './components/Testimoni'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   const [activedMenu, setActivedMenu] = useState("home")
@@ -30,6 +31,7 @@ function App() {
       <Harga />
       <Testimoni />
       <Contact />
+      <Footer />
     </main>
   )
 }

@@ -26,9 +26,9 @@ const contacts = [
 ]
 const Contact = () => {
     return (
-        <section className='mx-auto lg:w-[1280px] items-center py-5 mb-24'>
+        <section className='mx-auto lg:w-[1280px] items-center py-5 lg:mb-24 px-4 lg:px-0'>
             <SectionTitle label="Contact" subLabel="Temukan dan hubungi kami disini:" />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-2 md:gap-4">
                 {contacts.map((contact, i) => (
                     <div key={i} className="bg-neutral-100 p-8 flex flex-col gap-3">
                         <Icon icon={contact.icon} className='text-sky-500 text-[32px]' />

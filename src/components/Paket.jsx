@@ -30,9 +30,9 @@ const pakets = [
 ]
 const Paket = () => {
     return (
-        <section className='mx-auto lg:w-[1280px] items-center py-5'>
+        <section className='mx-auto lg:w-[1280px] items-center py-5 px-4 lg:px-0'>
             <SectionTitle label="Paket" subLabel="Lorem ipsum dolor sit amet" />
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
                 {pakets.map((paket, i) => (
                     <div key={i} className="flex gap-6 py-12 items-center relative">
                         <div className="absolute h-0.5 w-[4%] bg-sky-500 left-0 top-0" />
