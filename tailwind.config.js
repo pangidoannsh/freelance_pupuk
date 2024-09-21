@@ -8,6 +8,9 @@ export default {
     extend: {
       screens: {
         "xl": "1300px"
+      },
+      colors: {
+        'f9': '#f9f9f9',
       }
     },
     fontFamily: {

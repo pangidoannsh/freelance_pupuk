@@ -108,7 +108,7 @@ function App() {
     }
   }, [])
   return (
-    <main className='overflow-hidden'>
+    <main className='overflow-hidden bg-f9'>
       <Navbar onNavigate={handleNavigate} actived={activedMenu} scrollY={scrollY} />
       <Jumbotron refrence={homeRef} />
       <About refrence={aboutRef} />
