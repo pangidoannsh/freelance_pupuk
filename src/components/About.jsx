@@ -6,7 +6,7 @@ const About = ({ refrence }) => {
         <section className='bg-neutral-100 py-20' ref={refrence}>
             <div className="mx-auto lg:w-[1280px] xl:w-[1280px] px-4 lg:px-0 lg:grid lg:grid-cols-5 gap-6 items-center">
                 <div className='flex flex-col gap-4 lg:col-span-2'>
-                    <h3 className='bg-sky-100 text-sky-500 rounded py-3 px-4 w-max'>About Us</h3>
+                    <h3 className='bg-sky-100 text-sky-500 rounded-lg font-medium py-3 px-4 w-max'>About Us</h3>
                     <h4 className='font-bold text-3xl'>Lorem Ipsum Dolor</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ad maiores debitis nemo eaque inventore iure! Deleniti minus nulla aspernatur magni, nisi voluptates odit voluptatibus tenetur, eos distinctio nihil officiis?</p>
                     <button className='bg-sky-500 hover:bg-sky-700 text-white py-2 pl-6 pr-8 rounded tracking-[2px] mt-4 w-max flex items-center gap-2 group'>
