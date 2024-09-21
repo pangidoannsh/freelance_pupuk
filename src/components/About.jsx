@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
 
-const About = ({ refrence }) => {
+const About = ({ refrence, onNavigate }) => {
     return (
         <section className='bg-neutral-100 py-20' ref={refrence}>
             <div className="mx-auto lg:w-[1280px] xl:w-[1280px] px-4 lg:px-0 lg:grid lg:grid-cols-5 gap-6 items-center">
@@ -9,7 +9,7 @@ const About = ({ refrence }) => {
                     <h3 className='bg-sky-100 text-sky-500 rounded-lg font-medium py-3 px-4 w-max'>About Us</h3>
                     <h4 className='font-bold text-3xl'>Lorem Ipsum Dolor</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ad maiores debitis nemo eaque inventore iure! Deleniti minus nulla aspernatur magni, nisi voluptates odit voluptatibus tenetur, eos distinctio nihil officiis?</p>
-                    <button className='bg-sky-500 hover:bg-sky-700 text-white py-2 pl-6 pr-8 rounded tracking-[2px] mt-4 w-max flex items-center gap-2 group'>
+                    <button onClick={() => onNavigate("harga")} className='bg-sky-500 hover:bg-sky-700 text-white py-2 pl-6 pr-8 rounded tracking-[2px] mt-4 w-max flex items-center gap-2 group'>
                         Pilih Paket <Icon icon="bi:arrow-right" className='text-white text-xl relative left-0 duration-300 group-hover:left-2' />
                     </button>
                 </div>
