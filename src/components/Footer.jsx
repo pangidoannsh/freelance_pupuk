@@ -1,6 +1,6 @@
 import { menus } from "../data"
 
-const Footer = () => {
+const Footer = ({ onNavigate }) => {
     return (
         <section className="bg-neutral-200 pt-12">
             <div className="mx-auto lg:w-[1280px] px-4 lg:px-0">
@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className="font-bold">Useful Links</div>
                         <div className="flex flex-col gap-2 mt-4">
                             {menus.map((menu) => (
-                                <div key={menu.id} className="text-sm text-neutral-500 cursor-pointer hover:text-sky-500">{menu.title}</div>
+                                <div key={menu.id} onClick={() => onNavigate(menu.id)} className="text-sm text-neutral-500 cursor-pointer hover:text-sky-500">{menu.title}</div>
                             ))}
                         </div>
                     </div>

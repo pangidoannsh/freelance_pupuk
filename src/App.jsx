@@ -27,56 +27,37 @@ function App() {
   }
 
   function handleNavigate(to) {
+    const scrollToSection = (ref) => {
+      const isMobile = window.innerHeight > window.innerWidth;
+      if (isMobile) {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        const currentOffsetTop = ref.current?.offsetTop ?? 0;
+        window.scrollTo({
+          top: currentOffsetTop,
+          behavior: 'smooth',
+        });
+      }
+    };
+
     switch (to) {
       case 'home':
-        window.scroll({ behavior: 'smooth', top: 0 })
+        window.scroll({ behavior: 'smooth', top: 0 });
         break;
       case 'about':
-        aboutRef.current?.scrollIntoView({ behavior: "smooth", });
+        scrollToSection(aboutRef);
         break;
       case 'paket':
-        if (window.innerHeight > window.innerWidth) {
-          paketRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          const currentOffsetTop = paketRef.current?.offsetTop ?? 0;
-          window.scrollTo({
-            top: currentOffsetTop - 64,
-            behavior: 'smooth',
-          });
-        }
+        scrollToSection(paketRef);
         break;
       case 'harga':
-        if (window.innerHeight > window.innerWidth) {
-          hargaRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          const currentOffsetTop = hargaRef.current?.offsetTop ?? 0;
-          window.scrollTo({
-            top: currentOffsetTop - 24,
-            behavior: 'smooth',
-          });
-        }
+        scrollToSection(hargaRef);
         break;
       case 'testimoni':
-        if (window.innerHeight > window.innerWidth) {
-          testimoniRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          const currentOffsetTop = testimoniRef.current?.offsetTop ?? 0;
-          window.scrollTo({
-            top: currentOffsetTop - 64,
-            behavior: 'smooth',
-          });
-        }
+        scrollToSection(testimoniRef);
         break;
       case 'contact':
-        if (window.innerHeight > window.innerWidth) {
-          contactRef.current?.scrollIntoView({ behavior: "smooth" });
-        } else {
-          const currentOffsetTop = contactRef.current?.offsetTop ?? 0;
-          window.scrollTo({
-            top: currentOffsetTop - 64,
-            behavior: 'smooth',
-          });
-        }
+        scrollToSection(contactRef);
         break;
       default:
         console.log('tidak ada menu');
@@ -84,22 +65,23 @@ function App() {
   }
 
   function handleScrolling() {
-    let section = 'home';
-    if (window.scrollY >= (aboutRef.current?.offsetTop ?? 0) - 1) {
-      section = 'about';
-    }
-    if (window.scrollY >= (paketRef.current?.offsetTop ?? 0) - 1) {
-      section = 'paket';
-    }
-    if (window.scrollY >= (testimoniRef.current?.offsetTop ?? 0) - 1) {
-      section = 'testimoni';
-    }
-    if (window.scrollY >= (contactRef.current?.offsetTop ?? 0) - 1) {
-      section = 'contact';
-    }
-    console.log(section);
+    const sections = [
+      { name: 'about', ref: aboutRef },
+      { name: 'paket', ref: paketRef },
+      { name: 'testimoni', ref: testimoniRef },
+      { name: 'contact', ref: contactRef },
+    ];
 
-    setActivedMenu(section);
+    let activeSection = 'home';
+
+    for (const section of sections) {
+      const offsetTop = section.ref.current?.offsetTop ?? 0;
+      if (window.scrollY >= offsetTop - 1) {
+        activeSection = section.name;
+      }
+    }
+
+    setActivedMenu(activeSection);
   }
 
   useEffect(() => {
@@ -117,7 +99,7 @@ function App() {
       <Harga refrence={hargaRef} />
       <Testimoni refrence={testimoniRef} />
       <Contact refrence={contactRef} />
-      <Footer />
+      <Footer onNavigate={handleNavigate} />
       <button onClick={() => window.scroll({ behavior: 'smooth', top: 0 })}
         className={`bg-sky-500 shadow p-4 rounded hover:bg-sky-700 focus:ring focus:ring-sky-200 fixed bottom-4 right-4 duration-300 z-40 ${scrollY > 100 ? "opacity-100" : "opacity-0"}`}>
         <Icon icon="mingcute:arrow-up-fill" className='text-2xl text-white' />
