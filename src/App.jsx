@@ -119,7 +119,7 @@ function App() {
       <Contact refrence={contactRef} />
       <Footer />
       <button onClick={() => window.scroll({ behavior: 'smooth', top: 0 })}
-        className={`bg-sky-500 shadow p-4 rounded hover:bg-sky-700 focus:ring focus:ring-sky-200 fixed bottom-4 right-4 duration-300 ${scrollY > 100 ? "opacity-100" : "opacity-0"}`}>
+        className={`bg-sky-500 shadow p-4 rounded hover:bg-sky-700 focus:ring focus:ring-sky-200 fixed bottom-4 right-4 duration-300 z-40 ${scrollY > 100 ? "opacity-100" : "opacity-0"}`}>
         <Icon icon="mingcute:arrow-up-fill" className='text-2xl text-white' />
       </button>
     </main>

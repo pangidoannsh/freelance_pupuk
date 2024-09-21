@@ -30,7 +30,7 @@ const Navbar = ({ actived, scrollY, onNavigate }) => {
                 </button>
             </nav>
             {isMobile &&
-                <div className={`fixed rounded-b-lg w-screen bg-white z-40 left-0 duration-300 ${openMenu ? "top-0" : "-top-1/2"}
+                <div className={`fixed rounded-b-lg w-screen bg-white z-40 left-0 duration-300 top-0 ${openMenu ? "-translate-y-0" : "-translate-y-full"}
                     flex flex-col pt-16 pb-4`}>
                     {menus.map((menu) => (
                         <button onClick={() => { onNavigate(menu.id); setOpenMenu(false) }} className={`text-start ${actived === menu.id ? "text-sky-500" :

@@ -26,7 +26,8 @@ const HargaMobile = ({ datas }) => {
             <Swiper initialSlide={1} slidesPerView={isPhone ? 1 : 2} spaceBetween={30} ref={swiper} onSlideChange={({ realIndex }) => setSlide(prev => ({ ...prev, active: realIndex }))}>
                 {datas.map((harga, i) => (
                     <SwiperSlide key={i} className='p-2 h-full'>
-                        <div className={`bg-white shadow-lg border-t-2 border-neutral-100 rounded-2xl py-14 px-10 h-full flex flex-col items-center gap-8 ${harga.best ? 'border-[3px] border-sky-500' : ''}`}>
+                        <div className={`bg-white shadow-lg border-t-2 border-neutral-100 rounded-2xl py-14 px-10 h-[680px] flex flex-col items-center gap-8 
+                            ${harga.best ? 'border-[3px] border-sky-500 relative translate-y-0' : ''}`}>
                             <div className="flex flex-col items-center">
                                 <div className="text-xl font-medium text-center my-6">{harga.title}</div>
                                 <div className="relative z-10 flex w-[70px] h-[70px] bg-sky-500 rounded-full items-center justify-center highlight">
@@ -46,7 +47,7 @@ const HargaMobile = ({ datas }) => {
                                     </div>
                                 ))}
                             </div>
-                            <button className="w-max py-1.5 px-10 rounded-full border-2 border-neutral-300 text-neutral-500 
+                            <button className="mt-auto w-max py-1.5 px-10 rounded-full border-2 border-neutral-300 text-neutral-500 
                             hover:bg-sky-500 hover:text-white font-medium hover:border-sky-500 duration-300">Order</button>
                         </div>
                     </SwiperSlide>
