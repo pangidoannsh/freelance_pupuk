@@ -1,0 +1,27 @@
+* {
+  font-family: "Poppins", system-ui;
+}
+
+.highlight::before {
+  position: absolute;
+  content: "";
+  height: 86px;
+  width: 86px;
+  border-radius: 50%;
+  background: color-mix(in srgb, #3b82f6, transparent 80%);
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
+.highlight::after {
+  position: absolute;
+  content: "";
+  height: 102px;
+  width: 102px;
+  border-radius: 50%;
+  background: color-mix(in srgb, #3b82f6, transparent 90%);
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-2px);
+  z-index: -1;
+}
