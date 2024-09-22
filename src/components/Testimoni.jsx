@@ -47,7 +47,7 @@ const Testimoni = ({ refrence }) => {
                             {comments.slice().reverse().map((comment) => (
                                 <SwiperSlide key={comment.id} className="flex flex-col items-stretch min-h-40">
                                     <div className="bg-white flex flex-col gap-3 p-6 rounded-lg flex-1">
-                                        <div className="font-bold text-xl text-neutral-700">{comment.name}</div>
+                                        <div className="font-bold text-xl text-neutral-700 ">{comment.name}</div>
                                         <p className="text-neutral-500">{comment.comment}</p>
                                     </div>
                                 </SwiperSlide>

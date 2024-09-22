@@ -20,11 +20,12 @@ const Paket = ({ refrence }) => {
             <div className="grid md:grid-cols-2 gap-6 lg:gap-24">
                 {pakets.map((paket, i) => (
                     <div key={i} className="rounded-xl overflow-hidden bg-white shadow-md">
-                        <div className="h-64 text-white font-bold text-4xl bg-cover bg-center bg-no-repeat flex items-center justify-center" style={{ backgroundImage: `url("${paket.image}")` }}>
+                        <div className="h-40 md:h-64 text-white font-bold text-2xl md:text-4xl bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
+                            style={{ backgroundImage: `url("${paket.image}")` }}>
                             {paket.title}
                         </div>
                         <div className="p-4">
-                            <p className="text-neutral-600 text-justify leading-8 text-lg">{paket.desc}</p>
+                            <p className="text-neutral-600 text-justify md:leading-8 text-lg">{paket.desc}</p>
                             <hr className="mt-4" />
                             <button className="w-full bg-sky-500 hover:bg-sky-700 text-white py-3 px-4 rounded-lg text-lg mt-4">Lorem Ipsum</button>
                         </div>
