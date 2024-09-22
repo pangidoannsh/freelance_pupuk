@@ -30,8 +30,8 @@ const About = ({ refrence, onNavigate }) => {
                             <div className='w-20 h-20 rounded-full group-hover:bg-sky-500 bg-transparent flex items-center justify-center duration-300'>
                                 <Icon icon="f7:building-2" className='text-sky-500 group-hover:text-white text-3xl' />
                             </div>
-                            <h3 className='font-semibold text-2xl mt-6 mb-2 text-white'>Pupuk Organik (POC)</h3>
-                            <p className='text-white'>Limbah ikan patin, yang meliputi jeroan dan sisa-sisa ikan lainnya, memiliki potensi untuk diolah menjadi pupuk organik cair (POC). Pupuk ini kaya akan unsur hara seperti nitrogen, fosfor, dan kalium yang sangat dibutuhkan untuk pertumbuhan tanaman.</p>
+                            <h3 className='font-semibold text-2xl mt-6 mb-2 text-white'>Pupuk Organik</h3>
+                            <p className='text-white'>Limbah ikan patin, yang meliputi jeroan dan sisa-sisa ikan lainnya, memiliki potensi untuk diolah menjadi pupuk organik. Pupuk ini kaya akan unsur hara seperti nitrogen, fosfor, dan kalium yang sangat dibutuhkan untuk pertumbuhan tanaman.</p>
                         </div>
                     </div>
                 </div>

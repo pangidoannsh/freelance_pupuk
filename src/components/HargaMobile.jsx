@@ -9,15 +9,11 @@ const HargaMobile = ({ datas }) => {
     const swiper = useRef(null)
     const [slide, setSlide] = useState({ active: 0, total: 3 })
     const handlePrev = useCallback(() => {
-        console.log('test');
-
         if (!swiper.current) return;
         swiper.current.swiper.slidePrev();
     }, []);
 
     const handleNext = useCallback(() => {
-        console.log('test');
-
         if (!swiper.current) return;
         swiper.current.swiper.slideNext();
     }, []);
