@@ -47,8 +47,8 @@ const HargaMobile = ({ datas }) => {
                                     </div>
                                 ))}
                             </div>
-                            <button className="mt-auto w-max py-1.5 px-10 rounded-full border-2 border-neutral-300 text-neutral-500 
-                            hover:bg-sky-500 hover:text-white font-medium hover:border-sky-500 duration-300">Order</button>
+                            <a href="https://wa.link/6gdr2x" target='_blank' className="mt-auto w-max py-1.5 px-10 rounded-full border-2 border-neutral-300 text-neutral-500 
+                            hover:bg-sky-500 hover:text-white font-medium hover:border-sky-500 duration-300">Order</a>
                         </div>
                     </SwiperSlide>
                 ))}

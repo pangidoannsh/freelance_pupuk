@@ -8,7 +8,7 @@ const About = ({ refrence, onNavigate }) => {
                 <div className='flex flex-col gap-4 lg:col-span-2'>
                     <h3 className='bg-sky-100 text-sky-500 rounded-lg font-medium py-3 px-4 w-max'>About Us</h3>
                     <h4 className='font-bold text-3xl'>Lorem Ipsum Dolor</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga ad maiores debitis nemo eaque inventore iure! Deleniti minus nulla aspernatur magni, nisi voluptates odit voluptatibus tenetur, eos distinctio nihil officiis?</p>
+                    <p>Desa yang terletak di Kabupaten Kampar, Riau, dikenal sebagai salah satu sentra budidaya ikan patin di Indonesia. Sebagian besar masyarakatnya menggantungkan hidup dari sektor perikanan ini, yang tidak hanya berkontribusi terhadap ekonomi desa tetapi juga membentuk identitas sosial warga.</p>
                     <button onClick={() => onNavigate("harga")} className='bg-sky-500 hover:bg-sky-700 text-white py-2 pl-6 pr-8 rounded tracking-[2px] mt-4 w-max flex items-center gap-2 group'>
                         Pilih Paket <Icon icon="bi:arrow-right" className='text-white text-xl relative left-0 duration-300 group-hover:left-2' />
                     </button>
@@ -20,10 +20,8 @@ const About = ({ refrence, onNavigate }) => {
                             <div className='w-20 h-20 rounded-full group-hover:bg-sky-500 bg-transparent flex items-center justify-center duration-300'>
                                 <Icon icon="oui:copy-clipboard" className='text-sky-500 group-hover:text-white text-3xl' />
                             </div>
-                            <h3 className='font-semibold text-2xl mt-6 mb-2 text-white'>Lorem Ipsum</h3>
-                            <p className='text-white'>Pengunjung Objek Wisata Arung Sungai Kopu dapat melakukan kegiatan olahraga arung jeram dengan panjang lintasan 7
-                                kilometer dan jarak tempuh 1,5 jam sambil menikmati keindahan Air Sungai Kopu yang jernih, sejuk, dan dijamin bersih karena
-                                tidak ada aktivitas pembuangan limbah di bagian hulu sungai.</p>
+                            <h3 className='font-semibold text-2xl mt-6 mb-2 text-white'>Budidaya Ikan Patin</h3>
+                            <p className='text-white'>Ikan patin yang dihasilkan tidak hanya dijual dalam bentuk segar, tetapi juga diolah menjadi berbagai produk, seperti ikan salai, abon patin, keripik, naget, dan bakso ikan. Desa ini juga sering</p>
                         </div>
                     </div>
                     <div className='bg-cover bg-center bg-no-repeat relative w-full group px-10 py-12 rounded-xl overflow-hidden' style={{ backgroundImage: `url("/assets/images/item2.jpg")` }}>
@@ -32,10 +30,8 @@ const About = ({ refrence, onNavigate }) => {
                             <div className='w-20 h-20 rounded-full group-hover:bg-sky-500 bg-transparent flex items-center justify-center duration-300'>
                                 <Icon icon="f7:building-2" className='text-sky-500 group-hover:text-white text-3xl' />
                             </div>
-                            <h3 className='font-semibold text-2xl mt-6 mb-2 text-white'>Lorem Ipsum</h3>
-                            <p className='text-white'>Di sepanjang lintasan arung jeram, pengunjung juga bisa menikmati pemandangan alam, diantaranya berbagai
-                                bentuk bebatuan di dinding yang berada di sepanjang sungai. Kemudian pengunjung juga bisa menikmati segarnya air di tempat
-                                pemandian Air Terjun Putri Kayangan.Fuga ad maiores debitis nemo eaque inventore iure! Deleniti minus nulla aspernatur magni, </p>
+                            <h3 className='font-semibold text-2xl mt-6 mb-2 text-white'>Pupuk Organik (POC)</h3>
+                            <p className='text-white'>Limbah ikan patin, yang meliputi jeroan dan sisa-sisa ikan lainnya, memiliki potensi untuk diolah menjadi pupuk organik cair (POC). Pupuk ini kaya akan unsur hara seperti nitrogen, fosfor, dan kalium yang sangat dibutuhkan untuk pertumbuhan tanaman.</p>
                         </div>
                     </div>
                 </div>

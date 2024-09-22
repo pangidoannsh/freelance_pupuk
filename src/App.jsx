@@ -10,6 +10,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { Icon } from '@iconify/react/dist/iconify.js'
 
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+
 function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);

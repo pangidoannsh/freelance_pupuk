@@ -49,3 +49,7 @@ button.next-btn {
   background-color: #D9D9D9;
   padding: 2px;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

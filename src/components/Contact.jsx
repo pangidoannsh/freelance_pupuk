@@ -6,23 +6,23 @@ const contacts = [
     {
         label: "Address",
         icon: "solar:map-point-outline",
-        desc: "lorem ipsum dolor sit amet"
+        desc: "Jl. Poros Desa Koto Mesjid Kec. XIII Koto Kampar, Kabupaten Kampar, Riau."
     },
     {
         label: "Call Us",
         icon: "mi:call",
-        desc: "+62 123 456 789"
+        desc: "(+62) 852 - 7822 - 9701"
     },
-    {
-        label: "Find Us",
-        icon: "lets-icons:message",
-        desc: "lorem ipsum dolor sit amet"
-    },
-    {
-        label: "Open Hours",
-        icon: "tabler:clock",
-        desc: "All Day 07.00 - 20.00 WIB"
-    },
+    // {
+    //     label: "Find Us",
+    //     icon: "lets-icons:message",
+    //     desc: "lorem ipsum dolor sit amet"
+    // },
+    // {
+    //     label: "Open Hours",
+    //     icon: "tabler:clock",
+    //     desc: "All Day 07.00 - 20.00 WIB"
+    // },
 ]
 const Contact = ({ refrence }) => {
     return (

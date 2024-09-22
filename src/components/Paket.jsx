@@ -31,7 +31,7 @@ const pakets = [
 const Paket = ({ refrence }) => {
     return (
         <section className='mx-auto lg:w-[1280px] items-center py-5 px-4 lg:px-0' ref={refrence}>
-            <SectionTitle label="Paket" subLabel="Lorem ipsum dolor sit amet" />
+            <SectionTitle label="Pupuk" subLabel="Lorem ipsum dolor sit amet" />
             <div className="grid md:grid-cols-2 gap-6">
                 {pakets.map((paket, i) => (
                     <div key={i} className="flex gap-6 py-12 items-center relative">
