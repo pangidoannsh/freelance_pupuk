@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react/dist/iconify.js"
 import SectionTitle from "./SectionTitle"
 
 const pakets = [
@@ -9,14 +8,14 @@ const pakets = [
     },
     {
         title: "Pupuk Organik Cair",
-        image: "/assets/images/pupuk.jpg",
+        image: "/assets/images/pupuk-cair.jpg",
         desc: "Pupuk organik cair (POC) dari limbah ikan patin dihasilkan melalui fermentasi bagian ikan yang tidak terpakai seperti jeroan, kepala, dan tulang. POC ini kaya akan nitrogen (N), fosfor (P), dan kalium (K), yang penting untuk pertumbuhan tanaman, serta mikroorganisme."
     },
 ]
-const Paket = ({ refrence }) => {
+const Paket = ({ refrence, onNavigate }) => {
     return (
         <section className='mx-auto lg:w-[1280px] items-center py-5 px-4 lg:px-0' ref={refrence}>
-            <SectionTitle label="Pupuk" subLabel="Lorem ipsum dolor sit amet" />
+            <SectionTitle label="Pupuk" subLabel="Informasi Pupuk" />
             <div className="grid md:grid-cols-2 gap-6 lg:gap-24">
                 {pakets.map((paket, i) => (
                     <div key={i} className="rounded-xl overflow-hidden bg-white shadow-md">
@@ -27,7 +26,7 @@ const Paket = ({ refrence }) => {
                         <div className="p-4">
                             <p className="text-neutral-600 text-justify md:leading-8 text-lg">{paket.desc}</p>
                             <hr className="mt-4" />
-                            <button className="w-full bg-sky-500 hover:bg-sky-700 text-white py-3 px-4 rounded-lg text-lg mt-4">Lorem Ipsum</button>
+                            <button className="w-full bg-sky-500 hover:bg-sky-700 text-white py-3 px-4 rounded-lg text-lg mt-4" onClick={() => onNavigate("harga")}>Order Sekarang</button>
                         </div>
                     </div>
                 ))}

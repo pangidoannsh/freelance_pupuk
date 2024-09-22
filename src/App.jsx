@@ -97,7 +97,7 @@ function App() {
       <Navbar onNavigate={handleNavigate} actived={activedMenu} scrollY={scrollY} />
       <Jumbotron refrence={homeRef} onNavigate={handleNavigate} />
       <About refrence={aboutRef} onNavigate={handleNavigate} />
-      <Paket refrence={paketRef} />
+      <Paket refrence={paketRef} onNavigate={handleNavigate} />
       <Harga refrence={hargaRef} />
       <Testimoni refrence={testimoniRef} />
       <Contact refrence={contactRef} />

@@ -29,7 +29,7 @@ const isMobile = window.innerWidth < 840
 const Harga = ({ refrence }) => {
     return (
         <section className='mx-auto xl:w-[1280px] items-center py-5 lg:mb-32' ref={refrence}>
-            <SectionTitle label="Lorem" subLabel="Lorem ipsum dolor sit amet" />
+            <SectionTitle label="Paket" subLabel="Pilihan paket untuk anda" />
             {
                 isMobile ? <HargaMobile datas={hargas} /> : (
                     <div className="flex gap-6 mt-32">
@@ -59,6 +59,7 @@ const Harga = ({ refrence }) => {
                     </div>
                 )
             }
+            <div className="text-center text-neutral-500 font-medium text-lg mt-32">*Diskon paket berlaku kelipatan</div>
         </section>
     )
 }
