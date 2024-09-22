@@ -43,7 +43,7 @@ const Testimoni = ({ refrence }) => {
                 <div className="mx-auto lg:w-[1280px] px-4 lg:px-0">
                     <div className="relative">
                         <h2 className="text-3xl font-semibold text-start mb-4">Testimoni</h2>
-                        <Swiper slidesPerView={windowWidth < 400 ? 1 : windowWidth < 840 ? 2 : 4} spaceBetween={24} ref={swiper} onSlideChange={({ realIndex }) => setSlide(prev => ({ ...prev, active: realIndex }))}>
+                        <Swiper slidesPerView={windowWidth < 400 ? 1 : windowWidth < 840 ? 2 : 3} spaceBetween={16} ref={swiper} onSlideChange={({ realIndex }) => setSlide(prev => ({ ...prev, active: realIndex }))}>
                             {comments.slice().reverse().map((comment) => (
                                 <SwiperSlide key={comment.id} className="flex flex-col items-stretch min-h-40">
                                     <div className="bg-white flex flex-col gap-3 p-6 rounded-lg flex-1">
