@@ -95,7 +95,7 @@ function App() {
   return (
     <main className='overflow-hidden bg-f9'>
       <Navbar onNavigate={handleNavigate} actived={activedMenu} scrollY={scrollY} />
-      <Jumbotron refrence={homeRef} />
+      <Jumbotron refrence={homeRef} onNavigate={handleNavigate} />
       <About refrence={aboutRef} onNavigate={handleNavigate} />
       <Paket refrence={paketRef} />
       <Harga refrence={hargaRef} />
