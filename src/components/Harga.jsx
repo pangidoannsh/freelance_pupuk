@@ -59,7 +59,7 @@ const Harga = ({ refrence }) => {
                     </div>
                 )
             }
-            <div className="text-center text-neutral-500 font-medium text-lg mt-32">*Diskon paket berlaku kelipatan</div>
+            <div className="text-center text-neutral-500 font-medium text-lg mt-8 lg:mt-32">*Diskon paket berlaku kelipatan</div>
         </section>
     )
 }
