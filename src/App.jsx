@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import { Icon } from '@iconify/react/dist/iconify.js'
 
 import "primereact/resources/themes/lara-light-cyan/theme.css";
+import Suspended from './Suspended'
 
 function App() {
   const homeRef = useRef(null);
@@ -93,20 +94,21 @@ function App() {
     }
   }, [])
   return (
-    <main className='overflow-hidden bg-f9'>
-      <Navbar onNavigate={handleNavigate} actived={activedMenu} scrollY={scrollY} />
-      <Jumbotron refrence={homeRef} onNavigate={handleNavigate} />
-      <About refrence={aboutRef} onNavigate={handleNavigate} />
-      <Paket refrence={paketRef} onNavigate={handleNavigate} />
-      <Harga refrence={hargaRef} />
-      <Testimoni refrence={testimoniRef} />
-      <Contact refrence={contactRef} />
-      <Footer onNavigate={handleNavigate} />
-      <button onClick={() => window.scroll({ behavior: 'smooth', top: 0 })}
-        className={`bg-sky-500 shadow p-4 rounded hover:bg-sky-700 focus:ring focus:ring-sky-200 fixed bottom-4 right-4 duration-300 z-40 ${scrollY > 100 ? "opacity-100" : "opacity-0"}`}>
-        <Icon icon="mingcute:arrow-up-fill" className='text-2xl text-white' />
-      </button>
-    </main>
+    // <main className='overflow-hidden bg-f9'>
+    //   <Navbar onNavigate={handleNavigate} actived={activedMenu} scrollY={scrollY} />
+    //   <Jumbotron refrence={homeRef} onNavigate={handleNavigate} />
+    //   <About refrence={aboutRef} onNavigate={handleNavigate} />
+    //   <Paket refrence={paketRef} onNavigate={handleNavigate} />
+    //   <Harga refrence={hargaRef} />
+    //   <Testimoni refrence={testimoniRef} />
+    //   <Contact refrence={contactRef} />
+    //   <Footer onNavigate={handleNavigate} />
+    //   <button onClick={() => window.scroll({ behavior: 'smooth', top: 0 })}
+    //     className={`bg-sky-500 shadow p-4 rounded hover:bg-sky-700 focus:ring focus:ring-sky-200 fixed bottom-4 right-4 duration-300 z-40 ${scrollY > 100 ? "opacity-100" : "opacity-0"}`}>
+    //     <Icon icon="mingcute:arrow-up-fill" className='text-2xl text-white' />
+    //   </button>
+    // </main>
+    <Suspended />
   )
 }
 
